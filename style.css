@@ -116,7 +116,7 @@
     margin: 8px 0 6px;
     font-weight: 700;
     }
-    #accueil h4 {
+    #accueil h2 {
     margin-bottom: 8px;
     font-weight: 600;
     opacity: 0.95;
@@ -236,8 +236,8 @@
     }
 
     .competences { margin-top: 18px; }
-    .competences h4 { display:inline-block; background:transparent; color:#023a57; padding:6px 8px; border-radius:6px; margin-bottom:12px; }
-    .competences h4::before { content: '⚙️'; margin-right:8px; }
+    .competences h3 { display:inline-block; background:transparent; color:#023a57; padding:6px 8px; border-radius:6px; margin-bottom:12px; }
+    .competences h3::before { content: '⚙️'; margin-right:8px; }
     .skill { margin:18px 0;  }
     .skill-label { color:#043052; display:inline-block; margin: 10px; }
     .skill-meta { float:right; color:#043052; font-weight:700; margin: 10px; }
@@ -492,13 +492,26 @@
     font-size: 14px;
     }
     .contact-container button {
-    background: #0072ff;
-    color: #fff;
+    /* darker blue gives better contrast vs white text (WCAG >= 4.5:1) */
+    background: #0050cc;
+    color: #ffffff;
     padding: 12px 16px;
     border-radius: 10px;
     border: none;
     font-weight: 700;
     cursor: pointer;
+    transition: box-shadow 120ms ease, transform 120ms ease, background-color 120ms ease;
+    }
+
+    .contact-container button:hover {
+    background-color: #0066e6;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,86,204,0.12);
+    }
+
+    .contact-container button:focus-visible {
+    outline: 3px solid rgba(0,80,204,0.18);
+    outline-offset: 3px;
     }
 
     .form-group {

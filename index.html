@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio de Yassir Lazreq — développeur web full‑stack et designer UI/UX. Projets, compétences et contact.">
+    <link rel="preload" href="style.css" as="style">
+    <style>
+    :root { --navbar-height: 64px; }
+    html { scroll-padding-top: var(--navbar-height); }
+    body { margin:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; }
+    .navbar { position: fixed; top:0; left:0; right:0; height:var(--navbar-height); display:flex; align-items:center; justify-content:center; background:#023e8a; color:#fff; z-index:1000; }
+    #accueil { padding: calc(var(--navbar-height) + 20px) 20px 60px; color:#fff; text-align:center; background: linear-gradient(180deg,#0055ff 0%, #0072ff 40%); }
+    .profile-avatar { width:120px; height:120px; margin:0 auto 12px; border-radius:999px; background:#fff; display:flex; align-items:center; justify-content:center; }
+    .profile-avatar img { width:110px; height:110px; border-radius:999px; object-fit:cover; }
+    </style>
     <link rel="stylesheet" href="style.css">
     <title>Yassir Lazreq — Portfolio</title>
 </head>
@@ -24,7 +34,7 @@
             <img src="assets/photo%20profile.png" alt="Avatar" loading="lazy" decoding="async">
         </div>
         <h1 class="name">Lazreq Yassir</h1>
-        <h4>Développeur Full Stack | Designer UI/UX</h4>
+    <h2>Développeur Full Stack | Designer UI/UX</h2>
         <p>Étudiant passionné par le développement web et la création d'expériences utilisateur exceptionnelles</p>
         <div class="social-links">
             <a href="mailto:yassirlazre@gmail.com">✉️ Email</a>
@@ -46,8 +56,8 @@
                 <li>🎨 Enthousiaste à l'idée de concevoir des interfaces utilisateur intuitives et esthétiques.</li>
                 <li>🚀 Toujours à la recherche de nouvelles opportunités pour apprendre et grandir dans le domaine du développement web.</li>
             </ul>
-            <div class="competences">
-                <h4>Compétences Techniques</h4>
+                <div class="competences">
+                <h3>Compétences Techniques</h3>
                 <div class="skill">
                     <span class="skill-label">HTML</span>
                     <span class="skill-meta">90%</span>
