@@ -31,11 +31,7 @@ This is a simple portfolio website built using HTML and CSS. It features a singl
 
 - Mobile preview — [open image](design/Mon%20Portfolio%20mobile.png)
 
-	[![Mobile preview](design/Mon%20Portfolio%20mobile.png)](design/Mon%20Portfolio%20mobile.png)
-
 - Desktop preview — [open image](design/Mon%20Portfolio%20desktop.png)
-
-	[![Desktop preview](design/Mon%20Portfolio%20desktop.png)](design/Mon%20Portfolio%20desktop.png)
 
 ## How to Use
 
