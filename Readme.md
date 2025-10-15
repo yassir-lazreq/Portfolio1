@@ -16,14 +16,14 @@ This is a simple portfolio website built using HTML and CSS. It features a singl
 ├── index.html
 ├── style.css
 ├── assets
-│   ├── gal1.jpeg
-│   ├── gal2.jpeg
-│   ├── gal3.jpeg
-│   ├── gal4.jpeg
-│   ├── gal5.jpeg
-│   ├── formation1.jpeg
-│   └── formation2.jpeg
-└── README.md
+│   ├── photo-profile.png
+│   ├── proj-1.png
+│   ├── proj-2.png
+│   └── proj-3.png
+├── dist
+│   ├── mon-portfolio-mobile.zip    # compressed package for mobile build
+│   └── mon-portfolio-desktop.zip   # compressed package for desktop build
+└── Readme.md
 ```
 
 ## Online Demo
@@ -36,6 +36,13 @@ This is a simple portfolio website built using HTML and CSS. It features a singl
 - [Figma desktop Design](https://www.figma.com/design/AC4K3OHpQkfj7ddB0OFygh/Mon-Portfolio-desktop?node-id=0-1&t=0ehUkDlRuEdTipq9-1)
 - [Canva Design](https://www.canva.com/design/DAG13wTwMR8/GEdZvnq70k10QvibPzdJGA/edit?utm_content=DAG13wTwMR8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 - [Jira Board](https://yassirlazreq.atlassian.net/jira/software/projects/DEV/boards/4?atlOrigin=eyJpIjoiZTdhZmUyYzFmNzcxNDVmZDkxYjViMzM4NDdiN2Q4ZjciLCJwIjoiaiJ9)
+
+## Downloads
+
+Download compressed builds of the portfolio:
+
+- Mobile build (zip): [dist/mon-portfolio-mobile.zip](dist/mon-portfolio-mobile.zip)
+- Desktop build (zip): [dist/mon-portfolio-desktop.zip](dist/mon-portfolio-desktop.zip)
 
 ## How to Use
 
