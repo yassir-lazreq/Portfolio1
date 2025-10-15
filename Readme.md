@@ -1,28 +1,25 @@
 # Portfolio Website
 This is a simple portfolio website built using HTML and CSS. It features a single-page layout with sections for Home, About, Skills, Portfolio, and Contact.
-
-## Features
-
-- Single-page layout
-- Smooth scrolling
-- Responsive menu
-- Consistent design with CSS
-- Valid HTML & CSS (W3C standards)
-- Hosted on GitHub Pages
-
-## Folder Structure
 ```
 /
 ├── index.html
 ├── style.css
 ├── assets
 │   ├── photo-profile.png
-│   ├── proj-1.png
 │   ├── proj-2.png
 │   └── proj-3.png
-├── dist
-│   ├── mon-portfolio-mobile.zip    # compressed package for mobile build
-│   └── mon-portfolio-desktop.zip   # compressed package for desktop build
+├── design
+│   ├── Mon Portfolio desktop.png
+│   └── Mon Portfolio mobile.png
+└── Readme.md
+```
+├── assets
+│   ├── photo-profile.png
+│   ├── proj-2.png
+│   └── proj-3.png
+├── design
+│   └── mon-portfolio-desktop.png
+│   └── mon-portfolio-mobile.png
 └── Readme.md
 ```
 
@@ -37,12 +34,18 @@ This is a simple portfolio website built using HTML and CSS. It features a singl
 - [Canva Design](https://www.canva.com/design/DAG13wTwMR8/GEdZvnq70k10QvibPzdJGA/edit?utm_content=DAG13wTwMR8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 - [Jira Board](https://yassirlazreq.atlassian.net/jira/software/projects/DEV/boards/4?atlOrigin=eyJpIjoiZTdhZmUyYzFmNzcxNDVmZDkxYjViMzM4NDdiN2Q4ZjciLCJwIjoiaiJ9)
 
-## Downloads
 
-Download compressed builds of the portfolio:
+## Previews
 
-- Mobile build (zip): [dist/mon-portfolio-mobile.zip](dist/mon-portfolio-mobile.zip)
-- Desktop build (zip): [dist/mon-portfolio-desktop.zip](dist/mon-portfolio-desktop.zip)
+Here are the visual previews (stored in `design/`). Click any image to open it in full size:
+
+- Mobile preview — [open image](design/Mon%20Portfolio%20mobile.png)
+
+	[![Mobile preview](design/Mon%20Portfolio%20mobile.png)](design/Mon%20Portfolio%20mobile.png)
+
+- Desktop preview — [open image](design/Mon%20Portfolio%20desktop.png)
+
+	[![Desktop preview](design/Mon%20Portfolio%20desktop.png)](design/Mon%20Portfolio%20desktop.png)
 
 ## How to Use
 
