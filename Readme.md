@@ -1,4 +1,5 @@
 # Portfolio Website
+This is a simple portfolio website built using HTML and CSS. It features a single-page layout with sections for Home, About, Skills, Portfolio, and Contact.
 
 ## Features
 
@@ -31,9 +32,9 @@
 
 ## Resources
 
-- [Figma Gallery Design]()
-- [Figma Form Design]()
-- [Canva Design]()
+- [Figma mobile Design](https://www.figma.com/design/ZwHgMMgiMPye2DyUFwewJn/Mon-Portfolio-mobile?node-id=4002-20&t=a2nB5g3vF48Ms2s3-1)
+- [Figma desktop Design](https://www.figma.com/design/AC4K3OHpQkfj7ddB0OFygh/Mon-Portfolio-desktop?node-id=0-1&t=0ehUkDlRuEdTipq9-1)
+- [Canva Design](https://www.canva.com/design/DAG13wTwMR8/GEdZvnq70k10QvibPzdJGA/edit?utm_content=DAG13wTwMR8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## How to Use
 

@@ -23,6 +23,13 @@
     
     html {
     scroll-padding-top: var(--navbar-height);
+    scroll-behavior: smooth;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
     }
     html,
     body {
@@ -252,7 +259,8 @@
     background: #fff;
     padding: 20px;
     border-radius: 14px;
-    box-shadow: 0 8px 30px rgba(3, 78, 162, 0.06);
+    /* slightly lighter default shadow for better paint performance */
+    box-shadow: 0 6px 20px rgba(3, 78, 162, 0.06);
     display: flex;
     flex-direction: column;
     gap: 14px;
@@ -260,8 +268,11 @@
     }
 
     .project-card:hover {
+    /* stronger shadow only on hover (fewer elements painted with heavy shadow) */
     box-shadow: 0 12px 40px rgba(3, 78, 162, 0.1);
     transform: translateY(-4px);
+    /* help the browser prepare the layer for the short transform */
+    will-change: transform;
     }
     
     .project-card img {
@@ -269,6 +280,10 @@
     height: auto;
     object-fit: cover;
     border-radius: 8px;
+    display: block;
+    /* reserve space to avoid layout shift and improve scroll fluidity */
+    aspect-ratio: 16 / 9;
+    background-color: #f3f6f8;
     }
     .project-card h3 {
     margin: 2px 0 8px;
