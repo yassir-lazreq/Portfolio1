@@ -5,20 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio de Yassir Lazreq — développeur web full‑stack et designer UI/UX. Projets, compétences et contact.">
     <link rel="preload" href="style.css" as="style">
-    <style>
-    :root { --navbar-height: 64px; }
-    html { scroll-padding-top: var(--navbar-height); }
-    body { margin:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; }
-    .navbar { position: fixed; top:0; left:0; right:0; height:var(--navbar-height); display:flex; align-items:center; justify-content:center; background:#023e8a; color:#fff; z-index:1000; }
-    #accueil { padding: calc(var(--navbar-height) + 20px) 20px 60px; color:#fff; text-align:center; background: linear-gradient(180deg,#0055ff 0%, #0072ff 40%); }
-    .profile-avatar { width:120px; height:120px; margin:0 auto 12px; border-radius:999px; background:#fff; display:flex; align-items:center; justify-content:center; }
-    .profile-avatar img { width:110px; height:110px; border-radius:999px; object-fit:cover; }
-    </style>
     <link rel="stylesheet" href="style.css">
     <title>Yassir Lazreq — Portfolio</title>
 </head>
+
 <body>
     <!--=============== navbar ===============-->
+    
     <nav class="navbar">
         <ul class="nav-links">
             <li class="active"><a href="#accueil">accueil</a></li>
@@ -28,26 +21,34 @@
             <li class=""><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+    
     <!--=============== home section ===============-->
+    
     <section id="accueil">
         <div class="profile-avatar">
             <img src="assets/photo-profile.png" alt="Avatar" loading="lazy" decoding="async" width="160" height="160">
         </div>
+
         <h1 class="name">Lazreq Yassir</h1>
-    <h2>Développeur Full Stack | Designer UI/UX</h2>
+        <h2>Développeur Full Stack | Designer UI/UX</h2>
         <p>Étudiant passionné par le développement web et la création d'expériences utilisateur exceptionnelles</p>
+        
         <div class="social-links">
             <a href="mailto:yassirlazre@gmail.com">✉️ Email</a>
             <a href="https://www.linkedin.com/in/yassir-lazreq-435794215/">🔗 LinkedIn</a>
             <a href="https://github.com/yassir-lazreq">🐱 GitHub</a>
-                <a href="assets/yassir.pdf">📄 CV</a>
+            <a href="assets/yassir.pdf">📄 CV</a>
+        
         </div>
     </section>
+
     <!--=============== about section ===============-->
+    
     <section id="apropos">
         <div class="section-header">
             <span class="tag">À propos de moi</span>
         </div>
+
         <div class="about-me">
             <ul class="about-list">
                 <li>🎓 Actuellement étudiant à YouCode Nador, je me spécialise dans le développement web et la conception UI/UX.</li>
@@ -56,39 +57,49 @@
                 <li>🎨 Enthousiaste à l'idée de concevoir des interfaces utilisateur intuitives et esthétiques.</li>
                 <li>🚀 Toujours à la recherche de nouvelles opportunités pour apprendre et grandir dans le domaine du développement web.</li>
             </ul>
-                <div class="competences">
+
+            <div class="competences">
                 <h3>Compétences Techniques</h3>
+
                 <div class="skill">
+
                     <span class="skill-label">HTML</span>
                     <span class="skill-meta">90%</span>
                     <div class="progress">
                         <div class="progress-fill" style="width: 90%;"></div>
                     </div>
+
                     <span class="skill-label">CSS</span>
                     <span class="skill-meta">80%</span>
                     <div class="progress">
                         <div class="progress-fill" style="width: 80%;"></div>
                     </div>
+
                     <span class="skill-label">JavaScript</span>
                     <span class="skill-meta">75%</span>
                     <div class="progress">
                         <div class="progress-fill" style="width: 75%;"></div>
                     </div>
+
                     <span class="skill-label">Git / GitHub</span>
                     <span class="skill-meta">90%</span>
                     <div class="progress">
                         <div class="progress-fill" style="width: 90%;"></div>
                     </div>
-                    <span class="skill-label">figma</span>
+
+                    <span class="skill-label">Figma</span>
                     <span class="skill-meta">70%</span>
                     <div class="progress">
                         <div class="progress-fill" style="width: 70%;"></div>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
+
     <!--=============== projects section ===============-->
+    
     <section id="projects">
         <div class="section-header">
             <span class="tag">My Projects</span>
@@ -97,16 +108,19 @@
             <div class="projects-container">
                 <a href="https://yassir-lazreq.github.io/Campus-Connect/">
                     <div class="project-card">
+
                         <img src="assets/proj-1.png" alt="Project 1" loading="lazy" decoding="async" width="417" height="375">
                         <h3>Campus Connect</h3>
                         <p><b>Description :</b> Un site web vitrine conçu pour présenter une école ou un centre de formation.</p>
                         <p><b>Technologies utilisées :</b> HTML, CSS</p>
                         <p><b>Fonctionnalités :</b></p>
+
                         <ul>
                             <li>Page d’accueil avec présentation de l’école</li>
                             <li>Section “Nos Formations”</li>
                             <li>Formulaire de contact</li>
                         </ul>
+
                         <p><b>Objectif :</b> Améliorer la navigation et rendre la présentation de l’école plus professionnelle.</p>
                     </div>
                 </a>
@@ -147,6 +161,7 @@
     </section>
 
     <!--=============== formation section ===============-->
+
     <section id="formation">
         <div class="section-header">
             <span class="tag">Formation</span>
@@ -182,6 +197,7 @@
     </section>
 
     <!--=============== contact section ===============-->
+    
     <section id="contact">
         <div class="section-header">
             <span class="tag">Contactez nous</span>

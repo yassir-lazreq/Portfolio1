@@ -27,21 +27,20 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
+        html {
+            scroll-behavior: auto;
+        }
     }
-    }
+
     html,
     body {
     height: 100%;
     }
     body {
-    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,"Helvetica Neue", Arial;
     line-height: 1.5;
     color: var(--text);
     background: var(--page-bg);
-    -webkit-font-smoothing: antialiased;
     padding-top: var(--navbar-height);
     }
 
@@ -174,20 +173,6 @@
     background: transparent;
     color: #043052;
     }
-    #apropos img { display:none; }
-
-    .apropos-inner {
-    display: block;
-    max-width: 1100px;
-    margin: 0 auto;
-    gap: 20px;
-    }
-    .apropos-inner p {
-    margin: 0;
-    }
-    .apropos-inner img {
-    margin: 0;
-    }
 
     .about-list {
         list-style: none;
@@ -213,38 +198,15 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
-
-    @media (min-width: 768px) {
-    .apropos-inner {
-        display: grid;
-        grid-template-columns: 1fr 320px;
-        align-items: start;
-        gap:28px;
-    }
-
-
-    #apropos p {
-        margin: 0;
-        padding-right: 12px;
-    }
-    #apropos img {
-        display:block;
-        width: 100%;
-        max-width: 320px;
-        margin: 0;
-    }
-    }
-
     .competences { margin-top: 18px; }
     .competences h3 { display:inline-block; background:transparent; color:#023a57; padding:6px 8px; border-radius:6px; margin-bottom:12px; }
     .competences h3::before { content: '⚙️'; margin-right:8px; }
     .skill { margin:18px 0;  }
     .skill-label { color:#043052; display:inline-block; margin: 10px; }
-    .skill-meta { float:right; color:#043052; font-weight:700; margin: 10px; }
+    .skill-meta { float:right; color:#043052; font-weight:700; margin: 16px; }
     .progress { background: rgba(0,0,0,0.06); height:12px; border-radius:999px; overflow:hidden; margin-top:12px }
     .progress-fill { height:100%; background: linear-gradient(90deg,#2b2be6,#6a45ff); border-radius:999px; width:0; transition: width 1.2s ease; }
-    .skill::after { content: ''; display: table; clear: both; }
-
+    
     /* ============ Projects =============== */
 
     .projects-container {
@@ -259,7 +221,6 @@
     background: #fff;
     padding: 20px;
     border-radius: 14px;
-    /* slightly lighter default shadow for better paint performance */
     box-shadow: 0 6px 20px rgba(3, 78, 162, 0.06);
     display: flex;
     flex-direction: column;
@@ -268,10 +229,8 @@
     }
 
     .project-card:hover {
-    /* stronger shadow only on hover (fewer elements painted with heavy shadow) */
     box-shadow: 0 12px 40px rgba(3, 78, 162, 0.1);
     transform: translateY(-4px);
-    /* help the browser prepare the layer for the short transform */
     will-change: transform;
     }
     
@@ -281,7 +240,6 @@
     object-fit: cover;
     border-radius: 8px;
     display: block;
-    /* reserve space to avoid layout shift and improve scroll fluidity */
     aspect-ratio: 16 / 9;
     background-color: #f3f6f8;
     }
@@ -291,7 +249,6 @@
     }
     .project-card p,
     .project-card ul {
-    
     color: #444;
     font-size: 14px;
     }
@@ -331,7 +288,7 @@
         position: relative;
         max-width: 800px;
         margin: 0 auto;
-        padding-left: calc(var(--timeline-date-width) + var(--timeline-gap) + 20px); /* reserve space */
+        padding-left: calc(var(--timeline-date-width) + var(--timeline-gap) + 20px);
     }
 
     .timeline:before {
@@ -342,7 +299,7 @@
         bottom: 0;
         width: 4px;
         background: #0072ff;
-        border-radius: 2px;
+        border-radius: 50px;
     }
 
     .timeline-item {
@@ -351,7 +308,7 @@
         display: flex;
         align-items: center;
         gap: 20px;
-        padding-left: 20px; /* leave space for the line */
+        padding-left: 20px;
     }
 
     .timeline-date {
@@ -410,7 +367,6 @@
         font-size: 14px;
     }
 
-    /* Responsive: keep date and point on same line; tighten spacing on narrow screens */
     @media (max-width: 700px) {
     .timeline:before {
         left: calc(var(--timeline-date-width) + 8px);
@@ -418,7 +374,7 @@
     .timeline-item {
         flex-direction: row;
         align-items: center;
-        padding-left: 8px; /* smaller gutter on mobile */
+        padding-left: 8px;
     }
     .timeline-item .timeline-date {
         width: calc(var(--timeline-date-width) - 10px);
@@ -492,7 +448,6 @@
     font-size: 14px;
     }
     .contact-container button {
-    /* darker blue gives better contrast vs white text (WCAG >= 4.5:1) */
     background: #0050cc;
     color: #ffffff;
     padding: 12px 16px;
@@ -507,11 +462,6 @@
     background-color: #0066e6;
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0,86,204,0.12);
-    }
-
-    .contact-container button:focus-visible {
-    outline: 3px solid rgba(0,80,204,0.18);
-    outline-offset: 3px;
     }
 
     .form-group {
