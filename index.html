@@ -11,17 +11,23 @@
 
 <body>
     <!--=============== navbar ===============-->
-    
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li class="active"><a href="#accueil">accueil</a></li>
-            <li class=""><a href="#apropos">À propos</a></li>
-            <li class=""><a href="#projects">projets</a></li>
-            <li class=""><a href="#formation">formation</a></li>
-            <li class=""><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
+    <header>
+        <nav class="navbar">
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#accueil" class="nav-link">accueil</a></li>
+                <li class="nav-item"><a href="#apropos" class="nav-link">À propos</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">projets</a></li>
+                <li class="nav-item"><a href="#formation" class="nav-link">formation</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <!--=============== home section ===============-->
     
     <section id="accueil">
@@ -50,14 +56,13 @@
         </div>
 
         <div class="about-me">
-            <ul class="about-list">
-                <li>🎓 Actuellement étudiant à YouCode Nador, je me spécialise dans le développement web et la conception UI/UX.</li>
-                <li>💻 Passionné par la création de sites web interactifs et d'applications performantes.</li>
-                <li>🌐 Compétent en HTML, CSS, JavaScript, et familiarisé avec les frameworks front-end et back-end.</li>
-                <li>🎨 Enthousiaste à l'idée de concevoir des interfaces utilisateur intuitives et esthétiques.</li>
-                <li>🚀 Toujours à la recherche de nouvelles opportunités pour apprendre et grandir dans le domaine du développement web.</li>
-            </ul>
-
+            <div class="about-container">
+            <img src="assets/photo-profile.png" class="about-image" alt="Avatar" loading="lazy" decoding="async" width="160" height="160">
+                <div class="about-info">
+                    <h2>Hi, I'm Yassir!</h2>
+                    <p>Je suis un développeur web passionné par la création d'expériences utilisateur exceptionnelles.</p>
+                </div>
+            </div>
             <div class="competences">
                 <h3>Compétences Techniques</h3>
 
@@ -67,32 +72,36 @@
                     <span class="skill-meta">90%</span>
                     <div class="progress">
                         <div class="progress-fill" style="width: 90%;"></div>
+                        <span class="skill-meta">90%</span>
                     </div>
 
                     <span class="skill-label">CSS</span>
                     <span class="skill-meta">80%</span>
                     <div class="progress">
                         <div class="progress-fill" style="width: 80%;"></div>
+                        <span class="skill-meta">80%</span>
                     </div>
 
                     <span class="skill-label">JavaScript</span>
-                    <span class="skill-meta">75%</span>
-                    <div class="progress">
-                        <div class="progress-fill" style="width: 75%;"></div>
-                    </div>
-
-                    <span class="skill-label">Git / GitHub</span>
-                    <span class="skill-meta">90%</span>
-                    <div class="progress">
-                        <div class="progress-fill" style="width: 90%;"></div>
-                    </div>
-
-                    <span class="skill-label">Figma</span>
                     <span class="skill-meta">70%</span>
                     <div class="progress">
                         <div class="progress-fill" style="width: 70%;"></div>
+                        <span class="skill-meta">70%</span>
                     </div>
 
+                    <span class="skill-label">Figma</span>
+                    <span class="skill-meta">60%</span>
+                    <div class="progress">
+                        <div class="progress-fill" style="width: 60%;"></div>
+                        <span class="skill-meta">60%</span>
+                    </div>
+
+                    <span class="skill-label">Git / Github</span>
+                    <span class="skill-meta">60%</span>
+                    <div class="progress">
+                        <div class="progress-fill" style="width: 60%;"></div>
+                        <span class="skill-meta">60%</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -259,5 +268,6 @@
     <footer>
         <p>&copy; 2025 Yassir Lazreq. All rights reserved.</p>
     </footer>
+        <script src="script.js" defer></script>
 </body>
 </html>

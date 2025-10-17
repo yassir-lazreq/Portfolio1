@@ -1,15 +1,20 @@
 # Portfolio Website
 This is a simple portfolio website built using HTML and CSS. It features a single-page layout with sections for Home, About, Skills, Portfolio, and Contact.
+
+## Repository structure
+
 ```
 /
-├── index.html
-├── style.css
-├── assets
+├── index.html        
+├── style.css         
+├── script.js         
+├── assets/           
 │   ├── photo-profile.png
 │   ├── proj-1.png
 │   ├── proj-2.png
-│   └── proj-3.png
-├── design
+│   ├── proj-3.png
+│   └── yassir.pdf
+├── design/           
 │   ├── Mon Portfolio desktop.png
 │   └── Mon Portfolio mobile.png
 └── Readme.md
